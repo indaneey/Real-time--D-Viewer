@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time 3D</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+        }
+        #marmoset-viewer {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            width:100%;
+            height: 50px;
+            background-color: rgb(34, 34, 34);
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 12px;
+            padding: 0 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .side_info{
+            display: flex;
+            width: 300px;
+            height: 400px;
+            position: fixed;
+            top: 100px;
+            left: 10px;
+            background-color: rgba(41, 41, 41, 0.562);
+            border-radius: 10px;
+            backdrop-filter: blur(20px);
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(226, 226, 226);
+            padding-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .right{
+            display: flex;
+            position: fixed;
+            height: 100%;
+            width: 45px;
+            background-color: rgb(34, 34, 34);
+            top: 0;
+            right: 0;
+        }
+        iframe{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-left: -1px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Real-time 3D viewer</h1>
+        <h3>Sample by Indaneey</h3>
+    </div>
+    <div class="side_info">
+        Model information
+        <hr style="width: 80%;">
+        For Vicfeder
+    </div>
+    <div class="container">
+        <iframe src='house.html' allowfullscreen='true' height='100%' width='100%'></iframe>
+    </div>
+    <div class="right"></div>
+</body>
+</html>
